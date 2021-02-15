@@ -62,7 +62,6 @@ app.delete('/student/:id',(req,res) => {
  */
 
  app.put('/student', (req, res) => {
-    console.log('', req.body);
     const updatedStudent = JSON.parse(req.body);
     const existing = students.filter(item => item.id !== updatedStudent.id) [0];
     existing.firstName = updatedStudent.firstName;
