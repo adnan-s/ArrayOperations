@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Array Operation</title>
+</head>
+
+<body class="container" onload="bindData()">
+
+  <form>
+
+    <fieldset>
+      <legend>Person Data</legend>
+
+      <div>
+        <label  class="form-label" for="txtId">Id</label>
+        <input class="form-control" readonly type="text" name="txtId" id="txtId">
+      </div>
+
+      <div>
+        <label  class="form-label" for="txtFirstName">First Name</label>
+        <input class="form-control" type="text" name="txtFirstName" id="txtFirstName">
+      </div>
+  
+      <div>
+        <label class="form-label" for="txtLastName">Last Name</label>
+        <input class="form-control"  type="text" name="txtLastName" id="txtLastName">
+      </div>
+  
+      <div>
+        <label class="form-label" for="txtAddress">Address</label>
+        <input  class="form-control"  type="text" name="txtAddress" id="txtAddress">
+      </div>
+  
+      <div>
+        <input onclick="UpdateRecord()" type="button" value="Update" class="btn btn-primary" id="btnUpdate">
+      </div>  
+    </fieldset>
+
+
+  </form>
+
+  <hr>
+
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="primary">
+      <tr>
+        <th>Full Name</th>
+        <th>Class</th>
+        <th>Address</th>
+        <th>Delete</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody id="dgStudent">
+    </tbody>
+
+  </table>
+
+</body>
+
+</html>
